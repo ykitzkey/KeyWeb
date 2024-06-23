@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Website Under Development</title>
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding: 50px;
+        background-color: black;
+        transition: background-color 0.5s;
+    }
+    h1 {
+      color: inherit;
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+    p {
+      color: inherit;
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    body.light {
+      background-color: white;
+      color: black
+    }
+
+    body.dark {
+      background-color: black;
+      color: white
+    }
+
+    #theme-toggle {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background-image: url('Icon/Light\ and\ Dark\ Mode\ Toggle/light_dark_mode_switch.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 50px;
+      height: 50px;
+      border-radius: 12px;
+      cursor: pointer;
+    }
+
+    #theme-toggle:hover {
+      opacity: 0.8;
+    }
+  </style>
+  <meta charset="UTF-8">
+</head>
+<body>
+  <div class="nav">
+    <button id="theme-toggle"></button>
+  </div>
+  
+  <h1>Website Under Development</h1>
+    <p>The website is currently under development. Apologize for the inconvenience.</p>
+    <p>Check back soon for the new and improved website!</p>
+    <p>In the meantime, you can contact us at <a href="mailto:contact@key.name.my">contact@key.name.my</a> for any inquiries.</p>
+  <footer>
+    <center>
+      <p>&copy; 2024 ItzKeyYT</p>
+    </center>
+  </footer>
+  <script>
+    const toggleButton = document.getElementById('theme-toggle');
+    const bodyElement = document.body;
+
+    bodyElement.classList.add('dark');
+
+    let isDarkMode = true;
+
+    toggleButton.addEventListener('click', () => {
+      if (isDarkMode) {
+        bodyElement.classList.remove('dark');
+        bodyElement.classList.add('light');
+        isDarkMode = false;
+      } else {
+        bodyElement.classList.remove('light');
+        bodyElement.classList.add('dark');
+        isDarkMode = true;
+      }
+    });
+  </script>
+</body>
+</html>
