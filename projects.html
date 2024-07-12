@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Key</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container-style {
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .main-container {
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 800px;
+            margin: 20px;
+        }
+        p {
+            color: #444;
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+        .h1-title {
+            color: #333;
+            font-size: 75px;
+            font-weight: bolder;
+            margin-top: 5px;
+            margin-bottom: 25px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+        }
+        .lastupdate-date {
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+        .link-texts-container {  /* Focus and normal color: #1a73e8, Hover color: #144d97 */
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .text-item {
+            display: flex;
+            align-items: center;
+        }
+        .menu-numbers {
+            margin-right: 10px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .link-texts {
+            text-decoration: none;
+            color: #1a73e8;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 0.2s;
+        }
+        .link-texts:hover {
+            color: #144d97;
+            font-size: 18px;
+            text-decoration: underline;
+            transition: 0.2s;
+        }
+        .textlink-direct {
+            text-decoration: underline;
+            color: #000;
+            transition: 0.2s;
+        }
+        .textlink-direct:hover {
+            color: #555;
+            transition: 0.2s;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        li {
+            margin-bottom: 7px;
+            font-size: 19px;
+        }
+        ul li::before {
+            content: "• ‎ ";
+            font-size: 23px;
+        }
+        .nav-style {
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1em;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.25);
+            border-bottom-left-radius: 12px;
+            border-bottom-right-radius: 12px;
+        }
+        .navbar a {
+            color: #444;
+            text-decoration: none;
+            padding: 0.5em 1em;
+            transition: 0.2s;
+        }
+        .navbar a:hover {
+            color: #111;
+            text-decoration: underline;
+            transition: 0.2s;
+        }
+        .navbar .left {
+            flex: 1;
+            font-size: x-large;
+            font-weight: 1000;
+        }
+        .navbar .right {
+            display: flex;
+            gap: 1em;
+            font-weight: bold;
+        }
+        
+        /* Hamburger menu */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+        .hamburger div {
+            width: 25px;
+            height: 3px;
+            background-color: #444;
+            margin: 4px 0;
+            transition: 0.4s;
+        }
+        .navbar .right.active {
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+        }
+        .navbar .right.active a {
+            padding: 1em 0;
+        }
+        .link {
+            text-decoration: none;
+            color: #1a73e8;
+            transition: 0.2s;
+        }
+        .link:hover {
+            color: #144d97;
+            text-decoration: underline;
+            transition: 0.2s;
+        }
+
+        /* Media queries */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .navbar .left {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+            }
+            .navbar .right {
+                display: none;
+                width: 100%;
+            }
+            .hamburger {
+                display: flex;
+                margin: auto;
+                margin-right: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar-style">
+        <nav class="navbar">
+            <div class="left">
+                <a href="/">Key</a>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <div class="right">
+                <a href="/projects">Projects</a>
+                <a href="mailto:contact@key.name.my">Contact</a>
+            </div>
+        </nav>
+    </div>
+    <div class="container-style">
+        <div class="main-container">
+            <p class="h1-title">Key&#x27;s Project</p>
+            <p class="last-update-date"><strong>Last Update:</strong> July 12, 2024</p>
+            
+            <div class="link-texts-container">
+                <div class="text-item">
+                    <div class="menu-numbers">1. </div>
+                    <a href="#1" class="link-texts">Badge Giver</a>
+                </div>
+                <div class="text-item">
+                    <div class="menu-numbers">2. </div>
+                    <a href="#2" class="link-texts">Zubb</a>
+                </div>
+                <!-- <div class="text-item">
+                    <div class="menu-numbers">3. </div>
+                    <a href="#3" class="link-texts"></a>
+                </div> -->
+            </div>
+            
+            <p>I (Key) has worked on a lot of things since 2022, these were the latest work that I've worked on.</p>
+            
+            <div class="text-container">
+                <div id="1" class="text">
+                    <a href="https://github.com/ItzKeyYT/BadgeGiver" class="textlink-direct"><h2>Badge Giver</h2></a>
+                    <p>Badge Giver is a simple tool. It is designed to help Discord users obtain the Active Developer Badge without the need for coding or technical knowledge. The project uses JavaScript and aims to provide an easy and accessible way for users to acquire the Active Developer Badge within the Discord platform. Here are some of the key features Badge Giver offers:</p>
+                    <ul>
+                        <li><strong>Easy Badge Acquisition:</strong> Obtain the Active Developer Badge on Discord effortlessly without any coding or technical skills required.</li>
+                        <li><strong>No Coding Required:</strong> Eliminates the need for users to write code to obtain the badge.</li>
+                        <li><strong>Free of Charge:</strong> Access the Active Developer Badge for free without any hidden costs or subscriptions.</li>
+                    </ul>
+                </div>
+                
+                <div id="2" class="text">
+                    <a href="https://zubb.key.name.my" class="textlink-direct"><h2>Zubb</h2></a>
+                    <p>Zubb is a bot designed to enhance your Discord server experience. Here are some of the key features Zubb offers:</p>
+                    <h3>1. Moderation Tools:</h3>
+                    <ul>
+                        <li><strong>Auto-moderation:</strong> Automatically detect and manage inappropriate behavior with customizable filters for spam, offensive language, and more.</li>
+                        <li><strong>Manual Moderation:</strong> Commands to mute, kick, ban, and warn users directly from the chat.</li>
+                    </ul>
+                    <h3>2. Utility Commands:</h3>
+                    <ul>
+                        <li><strong>User Info:</strong> Look up information about specific users, such as join date and role assignments.</li>
+                        <li><strong>[Coming Soon] Server Info:</strong> Retrieve detailed information about your server, including member count, roles, and channels.</li>
+                    </ul>
+                    <h3>3. Economy System:</h3>
+                    <ul>
+                        <li><strong>Virtual Currency:</strong> Earn virtual currency within your server by claiming dailies.</li>
+                        <li><strong>Level System:</strong> Earn levels within your server by chatting.</li>
+                        <li><strong>[Coming Soon] Leaderboards:</strong> Compete with other members to see who can amass the most wealth.</li>
+                    </ul>
+                    <h3>4. [Comming Soon] Fun Commands:</h3>
+                    <ul>
+                        <li><strong>[Coming Soon] Rock Paper Scissors:</strong> Play Rock Paper Scissors with a bot in your Discord Server!</li>
+                    </ul>
+                </div>
+                
+                <!-- <div id="3" class="text">
+                    <a href="#"><h2></h2></a>
+                    <p></p>
+                    <ul>
+                        <li></li>
+                    </ul>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <script>
+        function toggleMenu() {
+            const rightMenu = document.querySelector('.navbar .right');
+            rightMenu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

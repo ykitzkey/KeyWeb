@@ -1,31 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Home Page | Key</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <title>404 Not Found | Key</title>
   <style>
     body {
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-      margin: 0;
       font-family: Arial, sans-serif;
-    }
-    .content-container {
-      flex: 1;
-    }
-    .content-style {
-      display: grid;
-      justify-content: center;
-      align-items: center;
-      height: 75vh;
+      margin: 0;
+      padding: 0;
     }
     .content {
       text-align: center;
-      font-family: 'Roboto', sans-serif;
     }
     h1 {
-      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
       color: inherit;
       font-size: 36px;
       margin-bottom: 20px;
@@ -35,12 +21,7 @@
       font-size: 18px;
       margin-bottom: 30px;
     }
-    footer {
-      text-align: center;
-      font-size: 14px;
-      color: #444;
-      padding: 1em 0;
-    }
+
     .nav-style {
       margin: 0;
       padding: 0;
@@ -75,6 +56,7 @@
       gap: 1em;
       font-weight: bold;
     }
+    /* Hamburger menu */
     .hamburger {
       display: none;
       flex-direction: column;
@@ -95,33 +77,33 @@
     .navbar .right.active a {
       padding: 1em 0;
     }
-    .link {
-      text-decoration: none;
-      color: #1a73e8;
-      transition: 0.2s;
-    }
-    .link:hover {
-      color: #144d97;
-      text-decoration: underline;
-      transition: 0.2s;
-    }
     button {
-      background-color: #111;
-      background-size: contain;
-      background-repeat: no-repeat;
-      width: 100px;
-      height: 50px;
-      border-radius: 12px;
+      padding: 10px 20px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
       cursor: pointer;
-      color: white;
-      transition: 0.5s;
-      margin: auto;
-      margin-right: 1em;
+      width: 144px;
+      align-self: center;
+      transition: 0.2s;
     }
     button:hover {
       background-color: #555;
-      transition: 0.5s;
+      transition: 0.2s;
     }
+    .link {
+        text-decoration: none;
+        color: #1a73e8;
+        transition: 0.2s;
+    }
+    .link:hover {
+        color: #144d97;
+        text-decoration: underline;
+        transition: 0.2s;
+    }
+
+    /* Media queries */
     @media (max-width: 768px) {
       .navbar {
         flex-direction: column;
@@ -150,42 +132,36 @@
 <body>
   <div class="navbar-style">
     <nav class="navbar">
-      <div class="left">
-        <a href="/">Key</a>
-        <div class="hamburger" onclick="toggleMenu()">
-          <div></div>
-          <div></div>
-          <div></div>
+        <div class="left">
+            <a href="/">Key</a>
+            <div class="hamburger" onclick="toggleMenu()">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
         </div>
-      </div>
-      <div class="right">
-        <a href="/projects">Projects</a>
-        <a href="mailto:contact@key.name.my">Contact</a>
-      </div>
+        <div class="right">
+          <a href="projects">Projects</a>
+          <a href="mailto:contact@key.name.my">Contact</a>
+        </div>
     </nav>
-  </div>
+</div>
   
-  <div class="content-container">
-    <div class="content-style">
-      <div class="content">
-        <h1>Key</h1>
-        <p>A developer, a content creator, and a gamer with a dream.</p>
-        <button onclick="window.location.href = '/projects'">My Projects</button>
-        <button onclick='window.location.href = "https://zubb.key.name.my"'>Zubb</button>
-        <button onclick="window.location.href = 'mailto:contact@key.name.my'">Contact</button>
-      </div>
-    </div>
-  </div>
-
+<div class="content">
+  <h1>404 Not Found</h1>
+    <p>Sorry, the page you are looking for does not exist.</p>
+    <button onclick="window.location.href = '/'">Go To Main Page</button>
   <footer>
-    <p>&copy; 2024 <a href="https://key.name.my" target="https://key.name.my" class="link">ItzKeyYT</a></p>
+    <center>
+      <p>&copy; 2024 <a href="https://key.name.my" target="https://key.name.my" class="link">ItzKeyYT</a></p>
+    </center>
   </footer>
-
   <script>
     function toggleMenu() {
       const rightMenu = document.querySelector('.navbar .right');
       rightMenu.classList.toggle('active');
     }
   </script>
+</div>
 </body>
 </html>
