@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service | Zubb</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container-style {
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .main-container {
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 800px;
+            margin: 20px;
+        }
+        p {
+            color: #444;
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+        .h1-title {
+            color: #333;
+            font-size: 75px;
+            font-weight: bolder;
+            margin-top: 5px;
+            margin-bottom: 25px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+        }
+        .tos-date {
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+        .link-terms-container {  /* Focus and normal color: #1a73e8, Hover color: #144d97 */
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .term-item {
+            display: flex;
+            align-items: center;
+        }
+        .menu-numbers {
+            margin-right: 10px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .link-terms {
+            text-decoration: none;
+            color: #1a73e8;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 0.2s;
+        }
+        .link-terms:hover {
+            color: #144d97;
+            font-size: 18px;
+            text-decoration: underline;
+            transition: 0.2s;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        li {
+            margin-bottom: 7px;
+            font-size: 19px;
+        }
+        ul li::before {
+            content: "• ‎ ";
+            font-size: 23px;
+        }
+        .nav-style {
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1em;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.25);
+            border-bottom-left-radius: 12px;
+            border-bottom-right-radius: 12px;
+        }
+        .navbar a {
+            color: #444;
+            text-decoration: none;
+            padding: 0.5em 1em;
+            transition: 0.2s;
+        }
+        .navbar a:hover {
+            color: #111;
+            text-decoration: underline;
+            transition: 0.2s;
+        }
+        .navbar .left {
+            flex: 1;
+            font-size: x-large;
+            font-weight: 1000;
+        }
+        .navbar .right {
+            display: flex;
+            gap: 1em;
+            font-weight: bold;
+        }
+        
+        /* Hamburger menu */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+        .hamburger div {
+            width: 25px;
+            height: 3px;
+            background-color: #444;
+            margin: 4px 0;
+            transition: 0.4s;
+        }
+        .navbar .right.active {
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+        }
+        .navbar .right.active a {
+            padding: 1em 0;
+        }
+        .link {
+            text-decoration: none;
+            color: #1a73e8;
+            transition: 0.2s;
+        }
+        .link:hover {
+            color: #144d97;
+            text-decoration: underline;
+            transition: 0.2s;
+        }
+
+        /* Media queries */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .navbar .left {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+            }
+            .navbar .right {
+                display: none;
+                width: 100%;
+            }
+            .hamburger {
+                display: flex;
+                margin: auto;
+                margin-right: 1em;
+            }
+        }
+        </style>
+</head>
+<body>
+    <div class="navbar-style">
+        <nav class="navbar">
+            <div class="left">
+                <a href="/">Zubb</a>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <div class="right">
+                <a href="https://discord.com/oauth2/authorize?client_id=1245272068015001680">Invite</a>
+                <a href="https://uptime.key.name.my/status/zubb"">Status</a>
+                <a href="mailto:contact@zubb.key.name.my">Contact</a>
+                <a href="/tos">Terms of Service</a>
+                <a href="/privacy">Privacy Policy</a>
+                <a href="https://key.name.my" target="https://key.name.my">Personal Website</a>
+            </div>
+        </nav>
+    </div>
+    <div class="container-style">
+        <div class="main-container">
+            <p class="h1-title">Zubb&#x27;s Terms of Service</p>
+            <p class="tos-date"><strong>Effective Date:</strong> July 6, 2024</p>
+            
+            <div class="link-terms-container">
+                <div class="term-item">
+                    <div class="menu-numbers">1. </div>
+                    <a href="#1" class="link-terms">Description of Service</a>
+                </div>
+                <div class="term-item">
+                    <div class="menu-numbers">2. </div>
+                    <a href="#2" class="link-terms">User Responsibilities</a>
+                </div>
+                <div class="term-item">
+                    <div class="menu-numbers">3. </div>
+                    <a href="#3" class="link-terms">Prohibited Activities</a>
+                </div>
+                <div class="term-item">
+                    <div class="menu-numbers">4. </div>
+                    <a href="#4" class="link-terms">Bot Usage</a>
+                </div>
+                <div class="term-item">
+                    <div class="menu-numbers">5. </div>
+                    <a href="#5" class="link-terms">Termination</a>
+                </div>
+                <div class="term-item">
+                    <div class="menu-numbers">6. </div>
+                    <a href="#6" class="link-terms">Limitation of Liability</a>
+                </div>
+                <div class="term-item">
+                    <div class="menu-numbers">7. </div>
+                    <a href="#7" class="link-terms">Bot Interaction</a>
+                </div>
+                <div class="term-item">
+                    <div class="menu-numbers">8. </div>
+                    <a href="#8" class="link-terms">Bot Commands and Functionality</a>
+                </div>
+                <div class="term-item">
+                    <div class="menu-numbers">9. </div>
+                    <a href="#9" class="link-terms">User Conduct and Community Standards</a>
+                </div>
+                <div class="term-item">
+                    <div class="menu-numbers">10. </div>
+                    <a href="#10" class="link-terms">Service Interruptions and Maintenance</a>
+                </div>
+                <div class="term-item">
+                    <div class="menu-numbers">11. </div>
+                    <a href="#11" class="link-terms">Feedback and Suggestions</a>
+                </div>
+                <div class="term-item">
+                    <div class="menu-numbers">12. </div>
+                    <a href="#12" class="link-terms">Modifications to Terms</a>
+                </div>
+                <!-- <div class="term-item">
+                    <div class="menu-numbers">13. </div>
+                </div> -->
+            </div>
+            
+            <p>By using the Zubb Bot ("Zubb"), you agree to comply with and be bound by these Terms of Service ("ToS"). If you do not agree to these terms, you may not use Zubb.</p>
+    
+            <div class="guidelines-container">
+                <div id="1" class="guidelines">
+                    <h2>1. Description of Service</h2>
+                    <p>Zubb is a Discord bot designed to enhance your Discord server experience through various features and functionalities. These include moderation commands, utility functions, entertainment features, and more. Zubb is provided "as is" and "as available" without warranties of any kind. We strive to maintain and improve Zubb continuously, but we cannot guarantee uninterrupted or error-free operation.</p>
+                </div>
+                
+                <div id="2" class="guidelines">
+                    <h2>2. User Responsibilities</h2>
+                    <p>By using Zubb, you agree to the following:</p>
+                    <ul>
+                        <li>You will not use Zubb for any illegal or unauthorized purposes. This includes violating any applicable laws or regulations.</li>
+                        <li>You will comply with all Discord Terms of Service and Community Guidelines when using Zubb.</li>
+                        <li>You will not exploit or harm Zubb in any way that may affect the service for other users. This includes engaging in activities that could disrupt Zubb’s operations or compromise its security.</li>
+                        <li>You will not attempt to gain unauthorized access to Zubb’s servers, databases, or other infrastructure.</li>
+                        <li>You will ensure that any content or actions initiated by Zubb on your Discord server comply with applicable laws and do not infringe upon the rights of others.</li>
+                    </ul>
+                </div>
+                
+                <div id="3" class="guidelines">
+                    <h2>3. Probihited Activities</h2>
+                    <p>You agree not to engage in any of the following prohibited activities:</p>
+                    <ul>
+                        <li>Using Zubb to spam, harass, or abuse other users.</li>
+                        <li>Distributing any form of malware, spyware, or malicious code through Zubb.</li>
+                        <li>Attempting to disrupt the operation of Zubb or its infrastructure.</li>
+                        <li>Impersonating any person or entity or falsely stating or otherwise misrepresenting your affiliation with a person or entity.</li>
+                        <li>Using Zubb in any manner that violates Discord’s Terms of Service or Community Guidelines, or that could reasonably be considered as damaging to Discord or its users.</li>
+                    </ul>
+                </div>
+                
+                <div id="4" class="guidelines">
+                    <h2>4. Bot Usage</h2>
+                    <p>In addition to the above, you agree to the following specific to the bot usage:</p>
+                    <ul>
+                        <li>You will not modify, reverse-engineer, decompile, or attempt to derive the source code of Zubb, or create derivative works based on Zubb.</li>
+                        <li>You will not use Zubb in a manner that exceeds reasonable request volumes, constitutes excessive or abusive usage, or adversely impacts the performance of Zubb for other users.</li>
+                        <li>You understand and acknowledge that Zubb’s availability and performance may vary based on factors such as server maintenance, Discord API limitations, and internet connectivity.</li>
+                        <li>You acknowledge that Zubb may collect and store server-related data necessary for providing and improving its services, such as server IDs, channel IDs, and user IDs, solely for operational purposes.</li>
+                    </ul>
+                    </div>
+                
+                <div id="5" class="guidelines">
+                    <h2>5. Termination</h2>
+                    <p>We reserve the right to terminate or suspend your access to Zubb at any time, without notice, for conduct that we believe violates these ToS or is harmful to other users of Zubb, us, or third parties, or for any other reason. Upon termination, your right to use Zubb will immediately cease.</p>
+                </div>
+        
+                <div id="6" class="guidelines">
+                    <h2>6. Limitation of Liability</h2>
+                    <p>To the fullest extent permitted by law, Zubb shall not be liable for any direct, indirect, incidental, special, consequential, or punitive damages, including but not limited to damages for loss of profits, goodwill, use, data, or other intangible losses, resulting from:</p>
+                    <ul>
+                        <li>The use or inability to use Zubb.</li>
+                        <li>Unauthorized access to or alteration of your transmissions or data.</li>
+                        <li>Statements or conduct of any third party on Zubb.</li>
+                        <li>Any other matter relating to Zubb.</li>
+                    </ul>
+                </div>
+                
+                <div id="7" class="guidelines">
+                    <h2>7. Bot Interaction</h2>
+                    <p>Zubb interacts with your Discord server as per the permissions granted upon adding the bot. By adding Zubb to your server, you agree that:</p>
+                    <ul>
+                        <li>Zubb may send messages, manage channels, and perform other actions based on commands initiated by users with appropriate permissions.</li>
+                        <li>You are responsible for configuring and managing Zubb’s permissions to ensure compliance with Discord’s Terms of Service and Community Guidelines.</li>
+                        <li>You acknowledge that certain features of Zubb may require specific permissions on your Discord server, such as message deletion or user management, and you agree to grant these permissions knowingly.</li>
+                    </ul>
+                </div>
+        
+                <div id="8" class="guidelines">
+                    <h2>8. Bot Commands and Functionality</h2>
+                    <p>Zubb provides a variety of commands and functionalities designed to enhance your Discord server experience. By using Zubb, you agree:</p>
+                    <ul>
+                        <li>To use bot commands responsibly and in accordance with Discord’s Terms of Service and Community Guidelines.</li>
+                        <li>That Zubb’s commands and functionalities may change over time as new features are added or existing ones are modified.</li>
+                        <li>Not to misuse or exploit Zubb’s commands for purposes other than their intended use, including but not limited to automated spamming or flooding of channels.</li>
+                    </ul>
+                </div>
+        
+                <div id="9" class="guidelines">
+                    <h2>9. User Conduct and Community Standards</h2>
+                    <p>In addition to Discord's guidelines, you agree:</p>
+                    <ul>
+                        <li>To promote a positive and respectful environment in your Discord server when using Zubb’s features.</li>
+                        <li>Not to use Zubb in a manner that promotes or facilitates discrimination, hate speech, or harassment against any individual or group.</li>
+                        <li>To comply with all applicable laws and regulations governing online conduct and content.</li>
+                    </ul>
+                </div>
+        
+                <div id="10" class="guidelines">
+                    <h2>10. Service Interruptions and Maintenance</h2>
+                    <p>You understand and accept:</p>
+                    <ul>
+                        <li>That Zubb may require periodic maintenance or updates, which may temporarily disrupt its availability.</li>
+                        <li>We will endeavor to minimize disruptions and provide advance notice of scheduled maintenance whenever possible.</li>
+                        <li>Zubb is provided on an "as available" basis, and we do not guarantee continuous, uninterrupted access to the service.</li>
+                    </ul>
+                </div>
+        
+                <div id="11" class="guidelines">
+                    <h2>11. Feedback and Suggestions</h2>
+                    <p>We welcome your feedback and suggestions for improving Zubb. By providing feedback, you grant us:</p>
+                    <ul>
+                        <li>The right to use and incorporate your suggestions into Zubb without any obligation to compensate you.</li>
+                        <li>Permission to attribute your feedback to you for promotional or improvement purposes, unless otherwise specified.</li>
+                    </ul>
+                </div>
+        
+                <div id="12" class="guidelines">
+                    <h2>12. Modifications to Terms</h2>
+                    <p>We reserve the right to modify these ToS at any time. We will provide notice of any significant changes by posting the new ToS on our website or through other communication methods. Your continued use of Zubb after such modifications will constitute your acknowledgment of the modified ToS and agreement to abide and be bound by the modified ToS.</p>
+                </div>
+        
+                <h2>Contact Information</h2>
+                <p>If you have any questions or concerns about these ToS, please contact us at <a href="mailto:contact@zubb.key.name.my" class="link">contact@zubb.key.name.my</a>.</p>
+                <footer>
+                    <center>
+                      <p>&copy; 2024 <a href="/" class="link">Zubb</a>/<a href="https://key.name.my" target="https://key.name.my" class="link">ItzKeyYT</a></p>
+                    </center>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <script>
+        function toggleMenu() {
+            const rightMenu = document.querySelector('.navbar .right');
+            rightMenu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
