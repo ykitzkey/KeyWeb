@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | Zubb</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container-style {
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .main-container {
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 800px;
+            margin: 20px;
+        }
+        p {
+            color: #444;
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+        .h1-title {
+            color: #333;
+            font-size: 75px;
+            font-weight: bolder;
+            margin-top: 5px;
+            margin-bottom: 25px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+        }
+        .privacy-date {
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+        .link-privacies-container {  /* Focus and normal color: #1a73e8, Hover color: #144d97 */
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .privacy-item {
+            display: flex;
+            align-items: center;
+        }
+        .menu-numbers {
+            margin-right: 10px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .link-privacies {
+            text-decoration: none;
+            color: #1a73e8;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 0.2s;
+        }
+        .link-privacies:hover {
+            color: #144d97;
+            font-size: 18px;
+            text-decoration: underline;
+            transition: 0.2s;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        li {
+            margin-bottom: 7px;
+            font-size: 19px;
+        }
+        ul li::before {
+            content: "• ‎ ";
+            font-size: 23px;
+        }
+        .nav-style {
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1em;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.25);
+            border-bottom-left-radius: 12px;
+            border-bottom-right-radius: 12px;
+        }
+        .navbar a {
+            color: #444;
+            text-decoration: none;
+            padding: 0.5em 1em;
+            transition: 0.2s;
+        }
+        .navbar a:hover {
+            color: #111;
+            text-decoration: underline;
+            transition: 0.2s;
+        }
+        .navbar .left {
+            flex: 1;
+            font-size: x-large;
+            font-weight: 1000;
+        }
+        .navbar .right {
+            display: flex;
+            gap: 1em;
+            font-weight: bold;
+        }
+        .link {
+            text-decoration: none;
+            color: #1a73e8;
+            transition: 0.2s;
+        }
+        .link:hover {
+            color: #144d97;
+            text-decoration: underline;
+            transition: 0.2s;
+        }
+
+        /* Hamburger menu */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+        .hamburger div {
+            width: 25px;
+            height: 3px;
+            background-color: #444;
+            margin: 4px 0;
+            transition: 0.4s;
+        }
+        .navbar .right.active {
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+        }
+        .navbar .right.active a {
+        padding: 1em 0;
+        }
+
+        /* Media queries */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .navbar .left {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+            }
+            .navbar .right {
+                display: none;
+                width: 100%;
+            }
+            .hamburger {
+                display: flex;
+                margin: auto;
+                margin-right: 1em;
+            }
+        }
+        </style>
+</head>
+<body>
+    <div class="navbar-style">
+        <nav class="navbar">
+            <div class="left">
+                <a href="/">Zubb</a>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <div class="right">
+                <a href="https://discord.com/oauth2/authorize?client_id=1245272068015001680">Invite</a>
+                <a href="https://uptime.key.name.my/status/zubb">Status</a>
+                <a href="mailto:contact@zubb.key.name.my">Contact</a>
+                <a href="/tos">Terms of Service</a>
+                <a href="/privacy">Privacy Policy</a>
+                <a href="https://key.name.my" target="https://key.name.my">Personal Website</a>
+            </div>
+        </nav>
+    </div>
+    <div class="container-style">
+        <div class="main-container">
+            <p class="h1-title">Zubb&#x27;s Privacy Policy</p>
+            <p class="privacy-date"><strong>Effective Date:</strong> July 6, 2024</p>
+            
+            <div class="link-privacies-container">
+                <div class="privacy-item">
+                    <div class="menu-numbers">1. </div>
+                    <a href="#1" class="link-privacies">Information We Collect</a>
+                </div>
+                <div class="privacy-item">
+                    <div class="menu-numbers">2. </div>
+                    <a href="#2" class="link-privacies">How We Use Your Information</a>
+                </div>
+                <div class="privacy-item">
+                    <div class="menu-numbers">3. </div>
+                    <a href="#3" class="link-privacies">Sharing of Your Information</a>
+                </div>
+                <div class="privacy-item">
+                    <div class="menu-numbers">4. </div>
+                    <a href="#4" class="link-privacies">Security of Your Information</a>
+                </div>
+                <div class="privacy-item">
+                    <div class="menu-numbers">5. </div>
+                    <a href="#5" class="link-privacies">Retention of Your Information</a>
+                </div>
+                <div class="privacy-item">
+                    <div class="menu-numbers">6. </div>
+                    <a href="#6" class="link-privacies">Your Data Protection Rights</a>
+                </div>
+                <div class="privacy-item">
+                    <div class="menu-numbers">7. </div>
+                    <a href="#7" class="link-privacies">Cookies and Tracking Technologies</a>
+                </div>
+                <div class="privacy-item">
+                    <div class="menu-numbers">8. </div>
+                    <a href="#8" class="link-privacies">Changes to This Privacy Policy</a>
+                </div>
+                <!-- <div class="privacy-item">
+                    <div class="menu-numbers">9. </div>
+                </div> -->
+            </div>
+            
+            <p>Zubb ("we", "our", or "us") respects your privacy and is committed to protecting the personal information you provide through our Discord bot. This privacy policy explains how we collect, use, disclose, and safeguard your information when you use Zubb.</p>
+    
+            <div class="guidelines-container">
+                <div id="1" class="guidelines">
+                    <h2>1. Information We Collect</h2>
+                    <ul>
+                        <li><strong>User Provided Information:</strong> We may collect and store information that you provide directly when interacting with Zubb, such as commands used, server IDs, user IDs, and any other information voluntarily provided.</li>
+                        <li><strong>Automatically Collected Information:</strong> Zubb may collect certain information automatically, including usage details, server interaction logs, error reports, and analytics data.</li>
+                    </ul>
+                </div>
+                
+                <div id="2" class="guidelines">
+                    <h2>2. How We Use Your Information</h2>
+                    <ul>
+                        <li><strong>To Provide and Improve Services:</strong> We use the information collected to operate, maintain, and enhance Zubb’s functionality and performance, including troubleshooting, data analysis, testing, and resear</li>
+                        <li><strong>To Communicate:</strong> We may use your information to respond to your inquiries, provide technical support, and communicate important updates related to Zubb.</li>
+                        <li><strong>To Ensure Security:</strong> We take measures to protect against unauthorized access to or alteration of your personal information, including monitoring and auditing our systems for security and compliance purposes.</li>
+                    </ul>
+                </div>
+                
+                <div id="3" class="guidelines">
+                    <h2>3. Sharing of Your Information</h2>
+                    <ul>
+                        <li><strong>Third Party Service Providers:</strong> We may share information with third-party service providers who assist us in operating Zubb or provide services on our behalf, such as hosting providers, analytics providers, and customer support services.</li>
+                        <li><strong>Legal Requirements:</strong> We may disclose your information if required to do so by law or in response to valid requests by public authorities (e.g., law enforcement agencies).</li>
+                    </ul>
+                </div>
+                
+                <div id="4" class="guidelines">
+                    <h2>4. Security of Your Information</h2>
+                    <p>We take reasonable measures to protect your personal information from unauthorized access, use, disclosure, alteration, or destruction. However, no method of transmission over the internet or electronic storage is completely secure, so we cannot guarantee absolute security.</p>
+                    </div>
+                
+                <div id="5" class="guidelines">
+                    <h2>5. Retention of Your Information</h2>
+                    <p>We will retain your personal information only for as long as necessary to fulfill the purposes outlined in this privacy policy, unless a longer retention period is required or permitted by law.</p>
+                </div>
+        
+                <div id="6" class="guidelines">
+                    <h2>6. Your Data Protection Rights</h2>
+                    <p>Depending on your location, you may have certain rights regarding your personal information, including the right to access, correct, or delete your data. You may also have the right to restrict or object to the processing of your personal information. To exercise these rights, please contact us using the information provided below.</p>
+                </div>
+                
+                <div id="7" class="guidelines">
+                    <h2>7. Cookies and Tracking Technologies</h2>
+                    <p>Zubb does not use cookies or tracking technologies directly. However, third-party services we utilize for analytics or other purposes may use cookies or similar technologies to collect information about your interactions with Zubb and other websites or online services.</p>
+                </div>
+        
+                <div id="8" class="guidelines">
+                    <h2>8. Chaneges to This Privacy Policy</h2>
+                    <p>We may update this privacy policy from time to time to reflect changes in our practices or legal requirements. We will notify you of any changes by posting the new privacy policy on our website or through other communication methods.</p>
+                </div>
+        
+                <!-- <div id="9" class="guidelines">
+                    <h2>9. [changethis]</h2>
+                </div> -->
+        
+                <h2>Contact Information</h2>
+                <p>If you have any questions or concerns about these ToS, please contact us at <a href="mailto:contact@zubb.key.name.my" class="link">contact@zubb.key.name.my</a>.</p>        
+                <footer>
+                    <center>
+                      <p>&copy; 2024 <a href="/" class="link">Zubb</a>/<a href="https://key.name.my" target="https://key.name.my" class="link">ItzKeyYT</a></p>
+                    </center>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <script>
+        function toggleMenu() {
+            const rightMenu = document.querySelector('.navbar .right');
+            rightMenu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
