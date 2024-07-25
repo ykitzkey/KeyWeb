@@ -2,132 +2,11 @@
 <html>
 <head>
   <title>404 Not Found | Key</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    .content {
-      text-align: center;
-    }
-    h1 {
-      color: inherit;
-      font-size: 36px;
-      margin-bottom: 20px;
-    }
-    p {
-      color: inherit;
-      font-size: 18px;
-      margin-bottom: 30px;
-    }
-
-    .nav-style {
-      margin: 0;
-      padding: 0;
-    }
-    .navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1em;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.25);
-      border-bottom-left-radius: 12px;
-      border-bottom-right-radius: 12px;
-    }
-    .navbar a {
-      color: #444;
-      text-decoration: none;
-      padding: 0.5em 1em;
-      transition: 0.37s;
-    }
-    .navbar a:hover {
-      color: #111;
-      text-decoration: underline;
-      transition: 0.37s;
-    }
-    .navbar .left {
-      flex: 1;
-      font-size: x-large;
-      font-weight: 1000;
-    }
-    .navbar .right {
-      display: flex;
-      gap: 1em;
-      font-weight: bold;
-    }
-    /* Hamburger menu */
-    .hamburger {
-      display: none;
-      flex-direction: column;
-      cursor: pointer;
-    }
-    .hamburger div {
-      width: 25px;
-      height: 3px;
-      background-color: #444;
-      margin: 4px 0;
-      transition: 0.4s;
-    }
-    .navbar .right.active {
-      display: flex;
-      flex-direction: column;
-      gap: 0;
-    }
-    .navbar .right.active a {
-      padding: 1em 0;
-    }
-    button {
-      padding: 10px 20px;
-      background-color: #333;
-      color: #fff;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      width: 144px;
-      align-self: center;
-      transition: 0.2s;
-    }
-    button:hover {
-      background-color: #555;
-      transition: 0.2s;
-    }
-    .link {
-        text-decoration: none;
-        color: #1a73e8;
-        transition: 0.2s;
-    }
-    .link:hover {
-        color: #144d97;
-        text-decoration: underline;
-        transition: 0.2s;
-    }
-
-    /* Media queries */
-    @media (max-width: 768px) {
-      .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-      .navbar .left {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-      }
-      .navbar .right {
-        display: none;
-        width: 100%;
-        justify-content: center;
-      }
-      .hamburger {
-        display: flex;
-        margin: auto;
-        margin-right: 1em;
-      }
-    }
-  </style>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="404_styles.css">
+  <link rel="stylesheet" href="nav_styles.css">
 </head>
 <body>
   <div class="navbar-style">
@@ -141,8 +20,18 @@
             </div>
         </div>
         <div class="right">
-          <a href="projects">Projects</a>
-          <a href="mailto:contact@key.name.my">Contact</a>
+          <a href="/projects">
+            <i class="fa-solid fa-folder"></i>
+            <span>Projects</span>
+          </a>
+          <a href="mailto:contact@key.name.my">
+            <i class="fa-solid fa-envelope"></i>
+            <span>Contact</span>
+          </a>
+          <a href="/zubb">
+            <i class="fa-brands fa-discord"></i>
+            <span>Zubb</span>
+          </a>
         </div>
     </nav>
 </div>

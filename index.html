@@ -3,147 +3,9 @@
 <head>
   <title>Home Page | Key</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-      margin: 0;
-      font-family: Arial, sans-serif;
-    }
-    .content-container {
-      flex: 1;
-    }
-    .content-style {
-      display: grid;
-      justify-content: center;
-      align-items: center;
-      height: 75vh;
-    }
-    .content {
-      text-align: center;
-      font-family: 'Roboto', sans-serif;
-    }
-    h1 {
-      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-      color: inherit;
-      font-size: 36px;
-      margin-bottom: 20px;
-    }
-    p {
-      color: inherit;
-      font-size: 18px;
-      margin-bottom: 30px;
-    }
-    footer {
-      text-align: center;
-      font-size: 14px;
-      color: #444;
-      padding: 1em 0;
-    }
-    .nav-style {
-      margin: 0;
-      padding: 0;
-    }
-    .navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1em;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.25);
-      border-bottom-left-radius: 12px;
-      border-bottom-right-radius: 12px;
-    }
-    .navbar a {
-      color: #444;
-      text-decoration: none;
-      padding: 0.5em 1em;
-      transition: 0.37s;
-    }
-    .navbar a:hover {
-      color: #111;
-      text-decoration: underline;
-      transition: 0.37s;
-    }
-    .navbar .left {
-      flex: 1;
-      font-size: x-large;
-      font-weight: 1000;
-    }
-    .navbar .right {
-      display: flex;
-      gap: 1em;
-      font-weight: bold;
-    }
-    .hamburger {
-      display: none;
-      flex-direction: column;
-      cursor: pointer;
-    }
-    .hamburger div {
-      width: 25px;
-      height: 3px;
-      background-color: #444;
-      margin: 4px 0;
-      transition: 0.4s;
-    }
-    .navbar .right.active {
-      display: flex;
-      flex-direction: column;
-      gap: 0;
-    }
-    .navbar .right.active a {
-      padding: 1em 0;
-    }
-    .link {
-      text-decoration: none;
-      color: #1a73e8;
-      transition: 0.2s;
-    }
-    .link:hover {
-      color: #144d97;
-      text-decoration: underline;
-      transition: 0.2s;
-    }
-    button {
-      background-color: #111;
-      background-size: contain;
-      background-repeat: no-repeat;
-      width: 100px;
-      height: 50px;
-      border-radius: 12px;
-      cursor: pointer;
-      color: white;
-      transition: 0.5s;
-      margin: auto;
-      margin-right: 1em;
-    }
-    button:hover {
-      background-color: #555;
-      transition: 0.5s;
-    }
-    @media (max-width: 768px) {
-      .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-      .navbar .left {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-      }
-      .navbar .right {
-        display: none;
-        width: 100%;
-        justify-content: center;
-      }
-      .hamburger {
-        display: flex;
-        margin: auto;
-        margin-right: 1em;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="index_styles.css">
+  <link rel="stylesheet" href="nav_styles.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -159,8 +21,18 @@
         </div>
       </div>
       <div class="right">
-        <a href="/projects">Projects</a>
-        <a href="mailto:contact@key.name.my">Contact</a>
+        <a href="/projects">
+          <i class="fa-solid fa-folder"></i>
+          <span>Projects</span>
+        </a>
+        <a href="mailto:contact@key.name.my">
+          <i class="fa-solid fa-envelope"></i>
+          <span>Contact</span>
+        </a>
+        <a href="/zubb">
+          <i class="fa-brands fa-discord"></i>
+          <span>Zubb</span>
+        </a>
       </div>
     </nav>
   </div>
@@ -170,9 +42,20 @@
       <div class="content">
         <h1>Key</h1>
         <p>A developer, a content creator, and a gamer with a dream.</p>
-        <button onclick="window.location.href = '/projects'">My Projects</button>
-        <button onclick='window.location.href = "https://zubb.key.name.my"'>Zubb</button>
-        <button onclick="window.location.href = 'mailto:contact@key.name.my'">Contact</button>
+        <div class="button">
+          <a href="/projects">
+            <i class="fa-solid fa-folder"></i>
+            <span>Projects</span>
+          </a>
+          <a href="/zubb">
+            <i class="fa-brands fa-discord"></i>
+            <span>Zubb</span>
+          </a>
+          <a href="mailto:contact@key.name.my">
+            <i class="fa-solid fa-envelope"></i>
+            <span>Contact</span>
+          </a>
+        </div>
       </div>
     </div>
   </div>
