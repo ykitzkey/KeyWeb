@@ -34,7 +34,6 @@
     transition: 0.37s;
 }
 .navbar .right span:hover {
-    color: #111;
     text-decoration: underline;
     transition: 0.37s;
 }
