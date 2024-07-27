@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="projects_styles.css"> <!-- Style for the page -->
+    <link rel="stylesheet" href="../nav_styles.css"> <!-- Nav Style -->
+    <title>Projects | Key</title>
+</head>
+<body>
+    <div class="navbar-style">
+        <nav class="navbar">
+            <div class="left">
+                <a href="/">Key</a>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <div class="right">
+                <a href="../bday-countdown">
+                    <i class="fa-solid fa-cake-candles"></i>
+                    <span>Birthday Countdown</span>
+                  </a>
+                <a href="../projects">
+                    <i class="fa-solid fa-folder"></i>
+                    <span>Projects</span>
+                </a>
+                <a href="mailto:contact@key.name.my">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>Contact</span>
+                </a>
+                <a href="../zubb">
+                    <i class="fa-brands fa-discord"></i>
+                    <span>Zubb</span>
+                </a>
+            </div>
+        </nav>
+    </div>
+    <div class="container-style">
+        <div class="main-container">
+            <p class="h1-title">Key&#x27;s Project</p>
+            <p class="last-update-date"><strong>Last Update:</strong> July 12, 2024</p>
+            
+            <div class="link-texts-container">
+                <div class="text-item">
+                    <div class="menu-numbers">1. </div>
+                    <a href="#1" class="link-texts">Badge Giver</a>
+                </div>
+                <div class="text-item">
+                    <div class="menu-numbers">2. </div>
+                    <a href="#2" class="link-texts">Zubb</a>
+                </div>
+                <!-- <div class="text-item">
+                    <div class="menu-numbers">3. </div>
+                    <a href="#3" class="link-texts"></a>
+                </div> -->
+            </div>
+            
+            <p>I (Key) has worked on a lot of things since 2022, these were the latest work that I've worked on.</p>
+            
+            <div class="text-container">
+                <div id="1" class="text">
+                    <a href="https://github.com/ItzKeyYT/BadgeGiver" class="textlink-direct"><h2>Badge Giver</h2></a>
+                    <p>Badge Giver is a simple tool. It is designed to help Discord users obtain the Active Developer Badge without the need for coding or technical knowledge. The project uses JavaScript and aims to provide an easy and accessible way for users to acquire the Active Developer Badge within the Discord platform. Here are some of the key features Badge Giver offers:</p>
+                    <ul>
+                        <li><strong>Easy Badge Acquisition:</strong> Obtain the Active Developer Badge on Discord effortlessly without any coding or technical skills required.</li>
+                        <li><strong>No Coding Required:</strong> Eliminates the need for users to write code to obtain the badge.</li>
+                        <li><strong>Free of Charge:</strong> Access the Active Developer Badge for free without any hidden costs or subscriptions.</li>
+                    </ul>
+                </div>
+                
+                <div id="2" class="text">
+                    <a href="/zubb" class="textlink-direct"><h2>Zubb</h2></a>
+                    <p>Zubb is a bot designed to enhance your Discord server experience. Here are some of the key features Zubb offers:</p>
+                    <h3>1. Moderation Tools:</h3>
+                    <ul>
+                        <li><strong>Auto-moderation:</strong> Automatically detect and manage inappropriate behavior with customizable filters for spam, offensive language, and more.</li>
+                        <li><strong>Manual Moderation:</strong> Commands to mute, kick, ban, and warn users directly from the chat.</li>
+                    </ul>
+                    <h3>2. Utility Commands:</h3>
+                    <ul>
+                        <li><strong>User Info:</strong> Look up information about specific users, such as join date and role assignments.</li>
+                        <li><strong>Server Info:</strong> Retrieve detailed information about your server, including member count, roles, and channels.</li>
+                    </ul>
+                    <h3>3. Economy System:</h3>
+                    <ul>
+                        <li><strong>Virtual Currency:</strong> Earn virtual currency within your server by claiming dailies.</li>
+                        <li><strong>Level System:</strong> Earn levels within your server by chatting.</li>
+                        <li><strong>Leaderboards:</strong> Compete with other members to see who can amass the most wealth.</li>
+                    </ul>
+                    <h3>4. [Comming Soon] Fun Commands:</h3>
+                    <ul>
+                        <li><strong>[Coming Soon] Rock Paper Scissors:</strong> Play Rock Paper Scissors with a bot in your Discord Server!</li>
+                    </ul>
+                </div>
+                <footer>
+                    <p>&copy; 2024 <a href="https://key.name.my" target="https://key.name.my" class="link">ItzKeyYT</a></p>
+                </footer>
+                
+                <!-- <div id="3" class="text">
+                    <a href="#"><h2></h2></a>
+                    <p></p>
+                    <ul>
+                        <li></li>
+                    </ul>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <script>
+        function toggleMenu() {
+            const rightMenu = document.querySelector('.navbar .right');
+            rightMenu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
