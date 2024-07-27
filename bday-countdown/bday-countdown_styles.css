@@ -1,0 +1,112 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f0f8ff;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 87vh;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+#countdown {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+#countdown div {
+    background: #333;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#countdown span {
+    font-size: 2rem;
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+#birthdayMessage {
+    margin-top: 20px;
+}
+
+.confetti {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    top: 0;
+    animation: confetti-fall 5s linear infinite;
+    opacity: 0;
+}
+
+footer {
+    text-align: center;
+    color: #444;
+    margin: auto;
+}
+
+.link {
+    text-decoration: none;
+    color: #1a73e8;
+    transition: 0.2s;
+}
+.link:hover {
+    color: #144d97;
+    text-decoration: underline;
+    transition: 0.2s;
+}
+
+@keyframes confetti-fall {
+    0% { 
+        transform: translateY(-100vh) rotate(0);
+        opacity: 1;
+    }
+    100% { 
+        transform: translateY(110vh) rotate(360deg); 
+        opacity: 0;
+    }
+}
+
+@media (max-width: 422px) {
+    #countdown {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 10px;
+    }
+    
+    #countdown div {
+        background: #333;
+        color: white;
+        padding: 5px;
+        border-radius: 5px;
+    }
+    
+    #countdown span {
+        font-size: 2rem;
+        display: block;
+    }
+    
+    .hidden {
+        display: none;
+    }
+    
+    #birthdayMessage {
+        margin-top: 10px;
+    }
+}
