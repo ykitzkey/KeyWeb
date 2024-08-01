@@ -1,15 +1,24 @@
 const countdown = () => {
     const now = new Date().getTime();
     const currentYear = new Date().getFullYear();
-    const birthdayThisYear = new Date(`August 4 , ${currentYear} 00:00:00`).getTime();
-    const birthdayNextYear = new Date(`August 4, ${currentYear + 1} 00:00:00`).getTime();
+
+    // Create the birthday date in UTC+8 timezone
+    const createUtc8Date = (year) => {
+        const birthdayUtc8 = new Date(`August 4, ${year} 00:00:00 UTC+08:00`).getTime();
+        return birthdayUtc8;
+    };
+
+    const birthdayThisYear = createUtc8Date(currentYear);
+    const birthdayNextYear = createUtc8Date(currentYear + 1);
 
     let countDate = birthdayThisYear;
 
     if (now > birthdayThisYear && now < birthdayNextYear) {
-        // If today is the birthday, show the special message
+        // If today is the birthday in UTC+8 timezone, show the special message
         const today = new Date();
-        if (today.getDate() === 4 && today.getMonth() + 1 === 8) {
+        const todayUtc8 = new Date(today.toLocaleString("en-US", {timeZone: "Asia/Kuala_Lumpur"}));
+
+        if (todayUtc8.getDate() === 4 && todayUtc8.getMonth() + 1 === 8) {
             document.getElementById('days').innerText = 0;
             document.getElementById('hours').innerText = 0;
             document.getElementById('minutes').innerText = 0;
