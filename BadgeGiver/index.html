@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Under Development | Badge Giver</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      /* background-color: black;
+      transition: background-color 0.5s; */
+    }
+    .content {
+      text-align: center;
+    }
+    h1 {
+      color: inherit;
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+    p {
+      color: inherit;
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    /* body.light {
+      background-color: white;
+      color: black
+    }
+
+    body.dark {
+      background-color: black;
+      color: white
+    } */
+
+    .nav-style {
+      margin: 0;
+      padding: 0;
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1em;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.25);
+      border-bottom-left-radius: 7px;
+      border-bottom-right-radius: 7px;
+    }
+    .navbar a {
+      color: #444;
+      text-decoration: none;
+      padding: 0.5em 1em;
+      transition: 0.37s;
+    }
+    .navbar a:hover {
+      color: #111;
+      text-decoration: underline;
+      transition: 0.37s;
+    }
+    .navbar .left {
+      flex: 1;
+      font-size: x-large;
+      font-weight: 1000;
+    }
+    .navbar .right {
+      display: flex;
+      gap: 1em;
+      font-weight: bold;
+    }
+    /* Hamburger menu */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+    .hamburger div {
+      width: 25px;
+      height: 3px;
+      background-color: #444;
+      margin: 4px 0;
+      transition: 0.4s;
+    }
+    .navbar .right.active {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+    .navbar .right.active a {
+      padding: 1em 0;
+    }
+    .link {
+      text-decoration: none;
+      color: #1a73e8;
+      transition: 0.2s;
+    }
+    .link:hover {
+      color: #144d97;
+      text-decoration: underline;
+      transition: 0.2s;
+    }
+
+    /* Media queries */
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .navbar .left {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+      }
+      .navbar .right {
+        display: none;
+        width: 100%;
+        justify-content: center;
+      }
+      .hamburger {
+        display: flex;
+        margin: auto;
+        margin-right: 1em;
+      }
+    }
+    
+    /* #theme-toggle {
+      background-image: url('Icon/LightDarkModeSwitch/light_dark_mode_switch.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 50px;
+      height: 50px;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: 0.5s;
+    }
+
+    #theme-toggle:hover {
+      opacity: 0.8;
+      transition: 0.5s;
+    } */
+  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div class="navbar-style">
+    <nav class="navbar">
+      <div class="left">
+        <a href="/BadgeGiver">Badge Giver</a>
+          <div class="hamburger" onclick="toggleMenu()">
+          <div></div>
+          <div></div>
+          <div></div>
+          </div>
+      </div>
+      <div class="right">
+        <a href="https://github.com/ItzKeyYT/BadgeGiver/releases/latest/download/BadgeGiver.zip">Download</a>
+        <a href="https://github.com/ItzKeyYT/BadgeGiver">GitHub</a>
+        <a href="mailto:contact@key.name.my">Contact</a>
+        <a href="https://key.name.my" target="key.name.my">Personal Website</a>
+        <!-- <button id="theme-toggle"></button> -->
+      </div>
+    </nav>
+  </div>
+  
+<div class="content">
+  <h1>Website Under Development</h1>
+    <p>The website is currently under development. Apologize for the inconvenience.</p>
+    <p>Check back soon for the new and improved website!</p>
+    <p>In the meantime, you can contact us at <a href="mailto:contact@key.name.my" class="link">contact@key.name.my</a> for any inquiries.</p>
+  <footer>
+    <center>
+      <p>&copy; 2024 <a href="/" class="link">ItzKeyYT</a></p>
+    </center>
+  </footer>
+  <script>
+    function toggleMenu() {
+      const rightMenu = document.querySelector('.navbar .right');
+      rightMenu.classList.toggle('active');
+    }
+    // const toggleButton = document.getElementById('theme-toggle');
+    // const bodyElement = document.body;
+
+    // bodyElement.classList.add('dark');
+
+    // let isDarkMode = true;
+
+    // toggleButton.addEventListener('click', () => {
+    //   if (isDarkMode) {
+    //     bodyElement.classList.remove('dark');
+    //     bodyElement.classList.add('light');
+    //     isDarkMode = false;
+    //   } else {
+    //     bodyElement.classList.remove('light');
+    //     bodyElement.classList.add('dark');
+    //     isDarkMode = true;
+    //   }
+    // });
+  </script>
+</div>
+</body>
+</html>
