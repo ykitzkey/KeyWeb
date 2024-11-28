@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home Page | Key</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="index_styles.css" />
+    <link rel="stylesheet" href="../nav_styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="navbar-style">
+      <nav class="navbar">
+        <div class="left">
+          <a href="/">Key</a>
+          <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+        <div class="right">
+          <a href="../projects">
+            <i class="fa-solid fa-folder"></i>
+            <span>Projects</span>
+          </a>
+          <a href="mailto:contact@key.name.my">
+            <i class="fa-solid fa-envelope"></i>
+            <span>Contact</span>
+          </a>
+          <a href="../badgegiver">
+            <i class="fa-brands fa-discord"></i>
+            <span>BadgeGiver</span>
+          </a>
+        </div>
+      </nav>
+    </div>
+
+    <div class="content-container">
+      <div class="content-style">
+        <div class="content">
+          <h1>Key</h1>
+          <p>A developer, a content creator, and a gamer with a dream.</p>
+          <div class="button">
+            <a href="../projects">
+              <i class="fa-solid fa-folder"></i>
+              <span>Projects</span>
+            </a>
+            <a href="../badgegiver" target="_blank">
+              <i class="fa-brands fa-discord"></i>
+              <span>Badge Giver</span>
+            </a>
+            <a href="mailto:contact@key.name.my">
+              <i class="fa-solid fa-envelope"></i>
+              <span>Contact</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>
+        &copy; 2024
+        <a href="https://key.name.my" target="https://key.name.my" class="link"
+          >ItzKeyYT</a
+        >
+      </p>
+    </footer>
+
+    <script>
+      window.location.href = "mailto:contact@key.name.my";
+      window.addEventListener("resize", function () {
+        if (window.innerWidth > 768) {
+          const right = document.querySelector(".navbar .right");
+          right.classList.remove("active");
+        }
+      });
+      function toggleMenu() {
+        const rightMenu = document.querySelector(".navbar .right");
+        rightMenu.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>
