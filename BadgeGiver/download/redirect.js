@@ -1,1 +1,0 @@
-window.location.href = "https://github.com/ItzKeyYT/BadgeGiver/releases/latest/download/BadgeGiver.zip"
