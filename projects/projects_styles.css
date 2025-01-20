@@ -3,26 +3,42 @@ body {
     margin: 0;
     padding: 0;
 }
+
 html {
     scroll-behavior: smooth;
 }
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 .container-style {
     display: grid;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    animation: fade 0.5s ease-in-out;
 }
+
 .main-container {
     padding: 20px;
     border-radius: 10px;
     max-width: 800px;
     margin: 20px;
 }
+
 p {
     color: #444;
     font-size: 20px;
     margin-bottom: 15px;
 }
+
 .h1-title {
     color: #333;
     font-size: 75px;
@@ -31,24 +47,30 @@ p {
     margin-bottom: 25px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
+
 .lastupdate-date {
     font-size: 22px;
     margin-bottom: 20px;
 }
-.link-texts-container {  /* Focus and normal color: #1a73e8, Hover color: #144d97 */
+
+.link-texts-container {
+    /* Focus and normal color: #1a73e8, Hover color: #144d97 */
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
+
 .text-item {
     display: flex;
     align-items: center;
 }
+
 .menu-numbers {
     margin-right: 10px;
     font-weight: bold;
     font-size: 18px;
 }
+
 .link-texts {
     text-decoration: none;
     color: #1a73e8;
@@ -56,48 +78,72 @@ p {
     font-weight: bold;
     transition: 0.2s;
 }
+
 .link-texts:hover {
     color: #144d97;
     font-size: 18px;
     text-decoration: underline;
     transition: 0.2s;
 }
+
 .textlink-direct {
     text-decoration: underline;
     color: #000;
     transition: 0.2s;
 }
+
 .textlink-direct:hover {
     color: #555;
     transition: 0.2s;
 }
+
 ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
+
 li {
     margin-bottom: 7px;
     font-size: 19px;
 }
+
 ul li::before {
     content: "• ‎ ";
     font-size: 23px;
 }
-.link {
-    text-decoration: none;
-    color: #1a73e8;
-    transition: 0.2s;
-}
-.link:hover {
-    color: #144d97;
-    text-decoration: underline;
-    transition: 0.2s;
-}
+
 footer {
     text-align: center;
     font-size: 14px;
     color: #444;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: #1a73e8;
+    transition: 0.2s;
+}
+
+.footer-link:hover {
+    color: #144d97;
+    text-decoration: underline;
+    transition: 0.2s;
+}
+
+.social-link {
+    text-decoration: none;
+    color: #444;
+    transition: 0.2s;
+}
+
+.social-link:hover {
+    color: #000000;
+    transition: 0.2s;
+}
+
+.social-link i {
+    margin: auto 5px;
 }
 
 @media (max-width: 640px) {

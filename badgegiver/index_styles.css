@@ -5,61 +5,101 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
 }
+
 .content-container {
     flex: 1;
     animation: slideUp 0.5s ease-in-out;
 }
+
 @keyframes slideUp {
     from {
         transform: translateY(2%);
         opacity: 0;
     }
+
     to {
         transform: translateY(0);
         opacity: 1;
     }
 }
+
 .content-style {
     display: grid;
     justify-content: center;
     align-items: center;
     height: 75vh;
 }
+
 .content {
     text-align: center;
     font-family: 'Roboto', sans-serif;
 }
+
 h1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: inherit;
+    text-align: center;
     font-size: 36px;
     font-weight: 1000;
-    margin-bottom: 20px;
 }
+
 p {
+    text-align: center;
     color: inherit;
     font-size: 18px;
-    margin-bottom: 30px;
 }
+
 footer {
     text-align: center;
     font-size: 14px;
     color: #444;
-    padding: 1em 0;
 }
-.link {
+
+.footer-link {
     text-decoration: none;
     color: #1a73e8;
     transition: 0.2s;
 }
-.link:hover {
+
+.footer-link:hover {
     color: #144d97;
     text-decoration: underline;
     transition: 0.2s;
 }
-.button {
-    margin-top: 25px;
+
+.social-link {
+    text-decoration: none;
+    color: #444;
+    transition: 0.2s;
 }
+
+.social-link:hover {
+    color: #000000;
+    transition: 0.2s;
+}
+
+.social-link i {
+    margin: auto 5px;
+}
+
+.button {
+    margin-top: auto;
+}
+
+@keyframes bounceAnimation {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
 .button a {
     display: inline-block;
     align-items: center;
@@ -69,23 +109,31 @@ footer {
     margin-bottom: 10px;
     margin-right: 10px;
     margin: 0 10px;
-    border-radius: 5px; 
+    border-radius: 5px;
     text-decoration: none;
-    transition: 0.5s;
+    transition: 0.37s;
 }
+
 .button a:hover {
     color: #111;
     border: 2px solid #111;
-    transition: 0.5s;
+    transition: 0.37s;
 }
+
+.button a.hovered {
+    animation: bounceAnimation 0.37s ease-in-out;
+}
+
 .button a span {
     margin-left: 5px;
 }
+
 @media (max-width: 768px) {
     .content-style {
         padding-left: 20px;
         padding-right: 20px;
     }
+
     .button a {
         padding: 10px 10px;
         margin-bottom: 6px;
@@ -93,11 +141,13 @@ footer {
         margin: 0 6px;
     }
 }
+
 @media (max-width: 434px) {
     .content-style {
         padding-left: 20px;
         padding-right: 20px;
     }
+
     .button a {
         padding: 10px 5px;
         margin-bottom: 6px;
@@ -105,11 +155,13 @@ footer {
         margin: 0 6px;
     }
 }
+
 @media (max-width: 404px) {
     .content-style {
         padding-left: 15px;
         padding-right: 15px;
     }
+
     .button a {
         font-size: 15px;
         padding: 10px 5px;
@@ -118,11 +170,13 @@ footer {
         margin: 0 1px;
     }
 }
+
 @media (max-width: 347px) {
     .content-style {
         padding-left: 10px;
         padding-right: 10px;
     }
+
     .button a {
         font-size: 14px;
         padding: 10px 5px;
@@ -131,11 +185,13 @@ footer {
         margin: 0 1px;
     }
 }
+
 @media (max-width: 321px) {
     .content-style {
         padding-left: 5px;
         padding-right: 5px;
     }
+
     .button a {
         font-size: 14px;
         padding: 10px 5px;
@@ -144,11 +200,13 @@ footer {
         margin: 0 1px;
     }
 }
+
 @media (max-width: 311px) {
     .content-style {
         padding-left: 3px;
         padding-right: 3px;
     }
+
     .button a {
         font-size: 13px;
         padding: 10px 5px;
@@ -157,11 +215,13 @@ footer {
         margin: 0 1px;
     }
 }
+
 @media (max-width: 291px) {
     .content-style {
         padding-left: 3px;
         padding-right: 3px;
     }
+
     .button a {
         font-size: 12px;
         padding: 10px 5px;
@@ -170,11 +230,13 @@ footer {
         margin: 0 1px;
     }
 }
+
 @media (max-width: 274px) {
     .content-style {
         padding-left: 3px;
         padding-right: 3px;
     }
+
     .button a {
         font-size: 11px;
         padding: 10px 5px;
@@ -183,11 +245,13 @@ footer {
         margin: 0 1px;
     }
 }
+
 @media (max-width: 258px) {
     .content-style {
         padding-left: 3px;
         padding-right: 3px;
     }
+
     .button a {
         font-size: 10px;
         padding: 10px 5px;
@@ -196,14 +260,17 @@ footer {
         margin: 0 1px;
     }
 }
+
 @media (max-width: 241px) {
     .content-style {
         padding-left: 3px;
         padding-right: 3px;
     }
+
     p {
         font-size: 15px;
     }
+
     .button a {
         font-size: 9px;
         padding: 10px 5px;
@@ -212,14 +279,17 @@ footer {
         margin: 0 1px;
     }
 }
+
 @media (max-width: 225px) {
     .content-style {
         padding-left: 3px;
         padding-right: 3px;
     }
+
     p {
         font-size: 12px;
     }
+
     .button a {
         font-size: 8px;
         padding: 10px 5px;
@@ -228,14 +298,17 @@ footer {
         margin: 0 1px;
     }
 }
+
 @media (max-width: 208px) {
     .content-style {
         padding-left: 3px;
         padding-right: 3px;
     }
+
     p {
         font-size: 11px;
     }
+
     .button a {
         font-size: 7px;
         padding: 10px 5px;
@@ -244,14 +317,17 @@ footer {
         margin: 0 1px;
     }
 }
+
 @media (max-width: 192px) {
     .content-style {
         padding-left: 3px;
         padding-right: 3px;
     }
+
     p {
         font-size: 10px;
     }
+
     .button a {
         font-size: 6px;
         padding: 10px 5px;
@@ -260,14 +336,17 @@ footer {
         margin: 0 1px;
     }
 }
+
 @media (max-width: 175px) {
     .content-style {
         padding-left: 3px;
         padding-right: 3px;
     }
+
     p {
         font-size: 9px;
     }
+
     .button a {
         font-size: 5px;
         padding: 10px 5px;

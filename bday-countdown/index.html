@@ -61,11 +61,39 @@
     <footer>
       <p>
         &copy; 2024-2025
-        <a href="https://key.name.my" target="https://key.name.my" class="link"
+        <a href="https://key.name.my" target="https://key.name.my" class="footer-link"
           >ItzKeyYT</a
         >
       </p>
+      <p>
+        <a href="https://discord.com/users/714385307679588383" target="https://discord.com/users/714385307679588383" class="social-link">
+          <i class="fa-brands fa-discord"></i>
+        </a>
+        <a href="htps://github.com/ItzKeyYT" target="https://github.com/ItzKeyYT" class="social-link">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://bsky.app/profile/itzk3y.bsky.social" target="https://bsky.app/profile/itzk3y.bsky.social" class="social-link">
+          <i class="fa-brands fa-bluesky"></i>
+        <a href="https://x.com/ItzForwardTweet" target="https://x.com/ItzForwardTweet" class="social-link">
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+      </p>
     </footer>
     <script src="bday-countdown_script.js"></script>
+    <script>
+      // Navbar correction
+      window.addEventListener("resize", function () {
+        if (window.innerWidth > 874) {
+          const right = document.querySelector(".navbar .right");
+          right.classList.remove("active");
+        }
+      });
+
+      // Navbar toggle
+      function toggleMenu() {
+        const rightMenu = document.querySelector(".navbar .right");
+        rightMenu.classList.toggle("active");
+      }
+    </script>
   </body>
 </html>

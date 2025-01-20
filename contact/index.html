@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Home Page | Key</title>
+    <title>Contact / Home Page | Key</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
@@ -14,7 +14,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="index_styles.css" />
-    <link rel="stylesheet" href="../nav_styles.css" />
+    <link rel="stylesheet" href="nav_styles.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
@@ -34,11 +34,11 @@
             <i class="fa-solid fa-envelope"></i>
             <span>Contact</span>
           </a>
-          <a href="../projects">
+          <a href="/projects">
             <i class="fa-solid fa-folder"></i>
             <span>Projects</span>
           </a>
-          <a href="../badgegiver">
+          <a href="/badgegiver">
             <i class="fa-brands fa-discord"></i>
             <span>Badge Giver</span>
           </a>
@@ -52,11 +52,11 @@
           <h1>Key</h1>
           <p>A developer, a content creator, and a gamer with a dream.</p>
           <div class="button">
-            <a href="../projects">
+            <a href="/projects">
               <i class="fa-solid fa-folder"></i>
               <span>Projects</span>
             </a>
-            <a href="../badgegiver" target="_blank">
+            <a href="/badgegiver" target="_blank">
               <i class="fa-brands fa-discord"></i>
               <span>Badge Giver</span>
             </a>
@@ -72,20 +72,48 @@
     <footer>
       <p>
         &copy; 2024-2025
-        <a href="https://key.name.my" target="https://key.name.my" class="link"
+        <a href="https://key.name.my" target="https://key.name.my" class="footer-link"
           >ItzKeyYT</a
         >
+      </p>
+      <p>
+        <a href="https://discord.com/users/714385307679588383" target="https://discord.com/users/714385307679588383" class="social-link">
+          <i class="fa-brands fa-discord"></i>
+        </a>
+        <a href="htps://github.com/ItzKeyYT" target="https://github.com/ItzKeyYT" class="social-link">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://bsky.app/profile/itzk3y.bsky.social" target="https://bsky.app/profile/itzk3y.bsky.social" class="social-link">
+          <i class="fa-brands fa-bluesky"></i>
+        <a href="https://x.com/ItzForwardTweet" target="https://x.com/ItzForwardTweet" class="social-link">
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
       </p>
     </footer>
 
     <script>
-      window.location.href = "mailto:contact@key.name.my";
+      window.location.href = "mailto:contact@key.name.my"
+
+      // Navbar correction
       window.addEventListener("resize", function () {
-        if (window.innerWidth > 768) {
+        if (window.innerWidth > 874) {
           const right = document.querySelector(".navbar .right");
           right.classList.remove("active");
         }
       });
+      
+      // Bounce Animation
+      const bounceElements = document.querySelectorAll('.button a').forEach(button => {
+        button.addEventListener('mouseenter', () => {
+          button.classList.add('hovered');
+        });
+
+        button.addEventListener('animationend', () => {
+            button.classList.remove('hovered'); 
+        });
+      });
+
+      // Navbar toggle
       function toggleMenu() {
         const rightMenu = document.querySelector(".navbar .right");
         rightMenu.classList.toggle("active");
